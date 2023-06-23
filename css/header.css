@@ -1,0 +1,36 @@
+.cabecalho {
+    background-color: var(--gray-escuro);
+    height: 90px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+}
+
+.cabecalho__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__titulo {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 40px;
+    color: var(--purple);
+}
+
+.cabecalho__navegacao {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+svg {
+    width: 35px;
+    height: 35px;
+    transition-duration: 0.2s;
+}
+
+svg:hover {
+    transform: scale(1.2);
+}
