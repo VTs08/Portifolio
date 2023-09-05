@@ -1,15 +1,15 @@
-@import url("./css/header.css");
-@import url("./css/banner.css");
-@import url("./css/sobreMim.css");
+@import url(./css/header.css);
+@import url(./css/main.css);
+@import url(./css/footer.css);
 
 :root {
-    --black: #1f1f1f;
-    --black-white: #2f2d2d;
-    --white: #FFFFFF;
-    --purple: #CA3E47;
-    --gray: #626262;
-    --background: #313131;
-    --gray-escuro: #414141;
+    --fonte: 'Montserrat', sans-serif;
+    --white: #f0edee;
+    --baby-blue: #90ddf0;
+    --blue: #007fff;
+    --shadow-blue: #0059b1;
+    --dark-blue: #0a090c;
+    --gray: #6a6a6a;
 }
 
 * {
@@ -17,46 +17,36 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
-    background: var(--background);
-}
-
-a {
-    text-decoration: none;
-}
-
-a {
-    color: #e92c6c;
-    text-decoration:none;
-    font-weight:bold
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: var(--white);
+    font-family: var(--fonte);
+    font-weight: 500;
 }
 
 .container {
-    max-width: 1700px;
-    width: 96%;
-    margin: auto;
-}
-
-.botao {
-    border: 2px solid var(--purple);
-    border-radius: 2px;
-    padding: .75rem 2rem;
-    color: var(--purple);
-    font-weight: 600;
-    box-shadow: 0px 0px 5px var(--purple);
-    background-color: var(--black-white);
-    transition: 0.2s;
-}
-
-.botao:hover {
-    transform: scale(1.1);
-}
-
-.red {
-    color: var(--purple);
+    max-width: 1200px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .negrito {
-    font-weight: 700;
+    color: var(--blue);
+    font-weight: 600;
 }
 
+.link {
+    color: var(--baby-blue);
+}
+
+.link:hover {
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+@media screen and (max-width: 990px) {
+    
+}

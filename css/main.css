@@ -1,0 +1,130 @@
+.sobre-mim {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    text-align: justify;
+}
+
+.sobre-mim--descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sobre-mim--apresentacao {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.sobre-mim--texto {
+    color: var(--gray);
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 26px;
+    text-indent: 3rem;
+}
+
+.color-text-shadow {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: clamp(16px, 2vw, 20px);
+    animation: name-shadow linear 3s infinite;
+}
+
+@keyframes name-shadow {
+    0% {
+        text-shadow: 0px 0px 1px var(--shadow-blue);
+    }
+
+    50% {
+        text-shadow: 0px 0px 3px var(--shadow-blue);
+    }
+
+    100% {
+        text-shadow: 0px 0px 1px var(--shadow-blue);
+    }
+}
+
+.imagem--perfil {
+    width: clamp( 14rem, 40vw, 28rem);
+    border-radius: 50%;
+    border: 1px solid var(--dark-blue);
+    animation: sombra-imagem--perfil linear 3s infinite;
+}
+
+@keyframes sombra-imagem--perfil {
+    0% {
+        box-shadow: 0px 0px 1px var(--dark-blue);
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px var(--dark-blue);
+    }
+
+    100% {
+        box-shadow: 0px 0px 1px var(--dark-blue);
+    }
+}
+
+.lista-skills-tittle {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    gap: .25rem;
+}
+
+.lista-skills {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+
+.lista-skills svg g, svg{
+    fill: rgb(177, 177, 177);
+    width: 35px;  
+}
+
+@media screen and (max-width: 1100px){
+    .sobre-mim {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .sobre-mim {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .sobre-mim--descricao  {
+        gap: 1.5rem;
+        display: grid;
+    }
+
+    .imagem--perfil {
+        width: 20rem;
+    } 
+
+    .lista-skills--container {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sobre-mim {
+        gap: 1rem;
+    }
+
+    .imagem--perfil {
+        width: clamp(8rem, 60vw, 20rem);
+    }
+
+    .sobre-mim--apresentacao {
+        font-size: clamp(32px, 4vw ,48px);
+        gap: 0;
+    }
+}
