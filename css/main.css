@@ -128,3 +128,10 @@
         gap: 0;
     }
 }
+
+@media screen and (max-height: 799px) {
+    .sobre-mim {
+        margin-top: clamp(2rem, 20vh, 8rem);
+        margin-bottom: clamp(2rem, 20vh, 8rem);
+    }
+}
